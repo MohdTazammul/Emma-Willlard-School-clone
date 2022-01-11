@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body
+{
+      background-color:#cbdfdb;
+    position:relative;
+    background-repeat: space;
+    background-size: 100% 720px;
+    font-family: Calibri;
+    font-weight: bold;
+}
+#logo
+{
+    height: 140px;
+    width: 140px;
+    margin-left: -1290px;
+    margin-top: -10px;
+}
+.dropdown-button
+{
+    padding: 10px;
+    background:#800000;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.dropdown-button a{
+    color: white;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-button 
+{
+    background: black;
+}
+.dropdown
+{
+    margin: auto 0;
+    margin-top: 35px;
+    width: 140px;
+    font-size: 16px;
+    text-align: center;
+}
+.dropdown ul
+{
+    list-style-type: none;
+}
+.dropdown ul a
+{
+    text-decoration: none;
+    color: black;
+}
+.dropdown ul li
+{
+    padding: 10px 5px;
+    background: white; /* li color*/
+    display: none;
+    opacity: 0;
+}
+.dropdown:hover li
+{
+    border-radius: 5px;
+    background-color:#c1c1c1;
+    animation: load 1s forwards;
+    display: block;
+    z-index: 1;
+}
+.dropdown li:hover
+{
+    background-color: #afafaf;
+}
+
+@keyframes load
+{
+    0%
+    {
+        transform:
+           
+        translateX(25px) rotate(-30deg);
+        /*rotateY(-90deg) translateY(200px);*/
+    }
+    100%
+    {
+        opacity: 1;
+        transform:
+           
+        translateX(0px) rotate(0deg);
+        /*rotatey(0deg) translateY(0px);*/
+        box-shadow: 0px 0px 10px black;
+    }
+}
+.dropdown li:first-child
+{
+    animation-delay: 0;     
+}
+.dropdown li:nth-child(2)
+{
+    animation-delay: 0.2s;
+}
+.dropdown li:nth-child(3)
+{
+    animation-delay: 0.4s;
+}
+.dropdown li:nth-child(4)
+{
+    animation-delay: 0.6s;
+}
+
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-table;
+  padding: 3px;
+    transition: all ease-in-out 0.5s;
+}
+.dropdown:hover  i{
+    transform:  rotate(405deg);
+}
+.down {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.footer {
+    background: #800000;
+    height: 200px;
+    widows: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    line-height: 80%;
+}
+
+
+
+
+
+
+
+#navbar {
+  z-index: 10;
+  position: fixed;
+  top: 2px;
+  width: 100%;
+  display:block;
+  transition: top 0.3s;
+}
+
+.container {
+    background-color: rgba(156,15,15,0.7);
+    height: 675px;
+    position:relative;
+    z-index:;
+    width: 400px;
+    margin-top: -700px;
+    margin-left: 20px;
+}
+
+.Review1 {
+    padding-top:250px;
+    padding-left: 35px; 
+    font-family: Fiolex Girls; 
+    font-size: 80px; 
+    
+    color: white; 
+    font-weight: 100;
+    line-height: 90%;
+
+}
+
+.Review2 {
+    padding: 40px 22px 0px 22px;
+    color: white;
+    font-weight:200;
+    font-size: 20px;
+    font-family: Book Antiqua;
+}
+
+
+}
+
+.history {
+	width: 60%;
+    padding: 150px 500px 150px 100px;
+}
+
+
+
+
+.img-text {
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    height: 65px;
+    width: 300px;
+    float: right;
+    margin-top: -200px;
+    margin-right:70px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#history-text {
+    color: darkslategray;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Arial;
+    text-align:justify;
+}
+
+
+
+.footer2 {
+    background: #800000;
+    height: 200px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    line-height: 80%;
+}
+@keyframes slider {
+
+0% {
+	left: 0;
+}
+
+20% {
+	left: 0%;
+}
+
+25% {
+	left: -100%;
+}
+
+45% {
+    left: -100%;
+
+}
+
+50% {
+		left: -200%;
+
+}
+
+70% {
+	left: -200%;
+}
+
+75% {
+	left: -300%;
+}
+
+95% {
+	left: -300%;
+}
+
+100% {
+	transform: translateX(0);
+
+}
+
+}
+
+#slider {
+    position:relative;
+    width: 95%;
+	overflow: hidden;
+    z-index: -1;
+}
+
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	
+	animation: 40s slider infinite; 
+
+}
